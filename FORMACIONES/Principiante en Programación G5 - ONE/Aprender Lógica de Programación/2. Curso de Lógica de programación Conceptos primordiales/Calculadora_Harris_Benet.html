@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+
+<h1>Calculadora Harris Benet</h1>
+
+<script>
+
+    function saltarlinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase)
+    }
+
+    function hombres(peso,altura,edad,actividad) {
+
+        tmbHombre = Math.round((660 + (13,7 * peso) + (5 * altura) - (6,8 * edad)) * sedentario)
+        return (tmbHombre);
+    }
+
+    function mujeres(peso,altura,edad,actividad) {
+
+        tmbMujer = Math.round((655 + (9,6 * peso) + (1,8 * altura) - (4,7 * edad)) * sedentario)
+        return (tmbMujer);
+    }
+
+    peso = prompt("Informe su peso")
+    altura = prompt("Informe su altura")
+    edad = prompt("Informe su edad")
+    sedentario = 1.168
+    ligera = 1.3375
+    moderado = 1.508
+    intenso = 1.6785
+    muyIntensa = 1.8484
+
+
+    mujer = mujeres(peso,altura,edad,sedentario)
+    hombre = hombres(peso,altura,edad,sedentario)
+
+    imprimir("Hombre: " + hombre)
+    saltarlinea()
+    saltarlinea()
+    imprimir("Mujer: " + mujer)
+
+</script>

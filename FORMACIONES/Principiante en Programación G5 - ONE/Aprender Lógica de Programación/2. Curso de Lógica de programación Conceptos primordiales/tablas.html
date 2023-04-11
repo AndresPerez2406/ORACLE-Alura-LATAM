@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<h1>Tablas de Multiplicar</h1>
+
+<script>
+
+    function saltarlinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarlinea();
+    }
+
+    var mult = 1
+    var tabla = parseInt(prompt("Ingrese el numero de la tabla que quiere ver"))
+
+    imprimir("WHILE");
+
+    while (mult <= 10) {
+        imprimir(tabla + " * " + mult + " = " + tabla * mult)
+        mult++;
+
+    }
+
+    imprimir("FOR")
+
+    for (var multi = 1; multi <= 10;multi++) {
+
+        imprimir(tabla + " * " + multi + " = " + tabla * multi)
+
+    }
+
+</script>

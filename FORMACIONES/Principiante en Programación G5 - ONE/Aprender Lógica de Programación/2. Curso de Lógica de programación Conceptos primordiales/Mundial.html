@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<h1>Mundial</h1>
+
+<script>
+
+    function saltarlinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarlinea();
+    }
+
+    var añoMundial = 1930;
+    var mundiales = 1
+    var limite = parseInt(prompt("Ingrese en año limite para calcular los mundiales"));
+    imprimir("El primer mundial de la fifa fue en el año   " + añoMundial + "   Los mundiales jugados han sido:  " + mundiales);
+    while (añoMundial < limite) {
+        añoMundial = añoMundial + 4
+        mundiales = mundiales + 1
+        imprimir("Hubo mundial de la fifa en el año   " + añoMundial + "   Los mundiales jugados han sido:  " + mundiales);
+    }
+
+</script>

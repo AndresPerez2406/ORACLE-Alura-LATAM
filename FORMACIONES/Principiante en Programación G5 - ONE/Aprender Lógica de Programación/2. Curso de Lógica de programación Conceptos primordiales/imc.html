@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+
+<h1>Calcular puntos equipo de voleibol</h1>
+
+<script>
+
+    function saltarlinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarlinea();
+    }
+
+    function calcularImc(peso,altura) {
+        imc = (peso / (altura * altura));
+        return imc;
+    }
+
+    nombre = prompt("Ingrese su nombre")
+    peso = prompt("Informe su peso")
+    altura = prompt("Informe su altura")
+
+    imcCalculado = calcularImc(peso,altura)
+
+
+    imprimir(nombre + ", su imc calculado es = " + imcCalculado);
+
+    if (imcCalculado < 18.5) {
+        imprimir("IMC abajo de lo recomendado")
+    }
+    if (imcCalculado > 18.5 && imcCalculado < 25 ) {
+        imprimir("IMC normal")
+    }
+    if (imcCalculado >= 25) {
+        imprimir("IMC sobrepeso")
+    }
+    if (imcCalculado > 25 && imcCalculado < 30) {
+        imprimir("IMC preobesidad")
+    }
+    if (imcCalculado >= 30) {
+        imprimir("IMC obesidad")
+    }
+</script>
