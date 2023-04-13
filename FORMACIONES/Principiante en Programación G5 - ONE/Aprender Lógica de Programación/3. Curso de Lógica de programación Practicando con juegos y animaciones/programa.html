@@ -1,0 +1,25 @@
+<canvas width="600" height="400"></canvas>
+
+<h1>Programa</h1>
+
+<script>
+
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+
+    pincel.fillStyle = "Lightgrey"
+    pincel.fillRect(0,0,600,400)
+
+
+    pincel.fillStyle = "yellow"
+    pincel.fillRect(0,0,200,400)
+
+    pincel.fillStyle = "blue"
+    pincel.fillRect(200,0,200,400)
+
+
+    pincel.fillStyle = "red"
+    pincel.fillRect(400,0,200,400)
+
+
+</script>
