@@ -1,0 +1,23 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    function dibujarCuadradoverde(x,y,w,h,color){
+
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+        pincel.fillStyle=color;
+        pincel.fillRect(x,y,w,h);
+        pincel.strokeStyle = "black";
+        pincel.strokeRect(x,y,w,h)
+
+    }
+
+    dibujarCuadradoverde(50,0,100,100,"blue");
+    dibujarCuadradoverde(150,25,75,75,"red");
+    dibujarCuadradoverde(225,50,50,50,"green");
+    dibujarCuadradoverde(275,75,25,25,"yellow");
+    dibujarCuadradoverde(300,87.5,12.5,12.5,"pink");
+    dibujarCuadradoverde(312.5,93.25,6.75,6.75,"brown");
+
+</script>
